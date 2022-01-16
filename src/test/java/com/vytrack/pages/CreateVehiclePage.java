@@ -79,8 +79,8 @@ public class CreateVehiclePage {
         chassisNumber.sendKeys(faker.numerify("###,###"));
         modelYear.sendKeys(String.valueOf(BrowserUtil.randomNumber(2000, 2021)));
         lastOdometer.sendKeys(String.valueOf(faker.number().numberBetween(1, 50000)));
-        immatriculationDate.sendKeys("Apr 12,2021" + Keys.ENTER);
-        firstContractDate.sendKeys("Apr 12,2019"+Keys.TAB);
+        immatriculationDate.sendKeys("Apr 12, 2021" + Keys.ENTER);
+        firstContractDate.sendKeys("Apr 12, 2019"+Keys.TAB);
         transmissionDropDown.click();
         transmissionOptionMaual.click();
         System.out.println("Form is filled");
