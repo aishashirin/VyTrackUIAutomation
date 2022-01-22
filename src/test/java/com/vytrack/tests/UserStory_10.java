@@ -7,12 +7,16 @@ import com.vytrack.utility.TestBase;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-/**Story: As a user, I should be access to Oro Documentation page.*/
+/**
+ * Story: As a user, I should be access to Oro Documentation page.
+ */
 public class UserStory_10 extends TestBase {
-    /**AC #1: user access Oro Documentation page */
+    /**
+     * AC #1: user access Oro Documentation page
+     */
 
     @Test
-    public void AC_01(){
+    public void AC_01() {
         new LoginPage().login("driver");
 
         new CommonAreaPage().getHelp.click();
@@ -21,6 +25,6 @@ public class UserStory_10 extends TestBase {
 
         System.out.println("driver.getTitle() = " + driver.getTitle());
 
-        Assertions.assertEquals("Welcome to Oro Documentation",driver.getTitle());
+        Assertions.assertEquals("Welcome to Oro Documentation", driver.getTitle());
     }
 }
